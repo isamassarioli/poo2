@@ -1,0 +1,42 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "JDBC: Compilar módulo",
+      "type": "shell",
+      "command": "mvn",
+      "args": [
+        "-q",
+        "-DskipTests",
+        "-pl",
+        "revisao-jdbc-produtos",
+        "-am",
+        "compile"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [
+        "$javac"
+      ],
+      "group": "build"
+    },
+    {
+      "label": "JDBC: Executar Main (Maven)",
+      "type": "shell",
+      "command": "mvn",
+      "args": [
+        "-q",
+        "-pl",
+        "revisao-jdbc-produtos",
+        "org.codehaus.mojo:exec-maven-plugin:3.5.0:java",
+        "-Dexec.mainClass=com.mycompany.revisaojdbc.Main"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": "JDBC: Compilar módulo",
+      "problemMatcher": []
+    }
+  ]
+}

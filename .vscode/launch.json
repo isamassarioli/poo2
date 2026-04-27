@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "JDBC Main (Maven Task)",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "com.mycompany.revisaojdbc.Main",
+      "projectName": "revisao-jdbc-produtos",
+      "preLaunchTask": "JDBC: Compilar módulo"
+    }
+  ]
+}

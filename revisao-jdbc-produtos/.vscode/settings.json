@@ -1,0 +1,6 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.import.maven.enabled": true,
+  "maven.executable.path": "C:\\Users\\isama\\scoop\\apps\\maven\\current\\bin\\mvn.cmd",
+  "java.debug.settings.enableRunDebugCodeLens": false
+}
